@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.background-img{
+    width: 55vw;
+    height: 90vh;
+    background-image: url("../Images/twitter_850x623.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+
+.bird-icon{
+    width: 270px;
+    height: 260px;
+}
+
+.bird-icon > img{
+    width: 100%;
+    height: 100%;
+}
+
+.right-segment__info{
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+    line-height: 2.7rem;
+    padding-left: 1.5rem;
+}
+
+.bird2-icon{
+    width: 50px;
+    height: 50px;
+    margin-top: 4.1rem;
+}
+
+.bird2-icon > img{
+    width: 100%;
+    height: 100%;
+}
+
+.top h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: max-content;
+    width: max-content;
+    margin-top: 3.5rem;
+
+}
+
+.middle h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3rem;
+    width: max-content;
+    height: max-content;
+}
+
+.sign-up{
+    margin-top: 1.3rem;
+}
+
+.log-in{
+    margin-top: 1rem;
+}
+
+input{
+    width: 21rem;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.log-inn{
+    background-color: black;
+    color: rgb(0, 162, 255);
+    border-color: lightgrey;
+    border-width: 1px;
+    font-size: 1rem;
+}
+
+.footer{
+    width: 95vw;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 0.78em;
+    word-spacing: 1rem;
+    color: #777;
+}
+
+.end{
+    position: relative;
+    display: block;
+    color: #777;
+    width: max-content;
+    font-size: 0.78em;
+    margin: auto;
+    top: 0.2rem;
+}
+
+@media screen and (max-width: 375px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .container{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 100vw;
+        height: max-content;
+        overflow-x: hidden;
+    }
+
+    .background-img{
+        top: 2rem;
+        left: 0;
+        right: 0;
+        position: relative;
+        width: 100vw;
+        height: 90vh;
+    }
+
+    input{
+        border-width: thin;
+    }
+
+    .footer{
+        width: 89vw;
+    }
+
+   a{ 
+        font-size: 0.6em;
+        word-spacing: 0.5rem;
+    }
+    .end{
+        position: relative;
+        display: inline-block;
+        font-size: 0.6em;
+        top: unset;
+    }
+} 
